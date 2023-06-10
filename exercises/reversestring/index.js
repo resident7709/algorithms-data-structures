@@ -27,6 +27,8 @@ function reverse(str) {
   return str === "" ? "" : reverse(str.substr(1)) + str.charAt(0);
 }
 
+// * Solution#4
+
 reverse("apple");
 
 module.exports = reverse;
