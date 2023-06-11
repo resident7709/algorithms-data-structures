@@ -22,13 +22,14 @@
 //   return reversed;
 // }
 
-// * Recursion + Ternary Operator
+// * Array.prototype.reduce()
 function reverse(str) {
-  return str === "" ? "" : reverse(str.substr(1)) + str.charAt(0);
+  return str.split("").reduce((rev, char) => char + rev, "");
 }
 
-// * Solution#4
-
-reverse("apple");
+// * Recursion + Ternary Operator
+// function reverse(str) {
+//   return str === "" ? "" : reverse(str.substr(1)) + str.charAt(0);
+// }
 
 module.exports = reverse;
